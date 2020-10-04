@@ -17,7 +17,7 @@ body{
 	margin: 0 auto;
 }
 .hero{
-	position: relative;
+	/* position: relative; */
 	max-width: auto;
 	min-height: 100vh;
 	background:
