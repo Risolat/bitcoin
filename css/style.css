@@ -20,10 +20,13 @@ body{
 	max-width: auto;
 	min-height: 100vh;
 	background:
-		linear-gradient(to right, rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), 
-		url("../assets/img/bg.jpg") no-repeat center center / cover;
+		linear-gradient(to right, rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), 
+		url("https://wallpaperset.com/w/full/1/0/e/492349.jpg") no-repeat center center / cover;
 		background-attachment: fixed;
 }
+
+/* site navigation */
+
 .site-nav{
 	display: flex;
 	justify-content: space-between;
@@ -72,6 +75,11 @@ body{
 	color: #fff;
 	background: linear-gradient(270deg,#d4af37,#b18145 106.25%);
 }
+
+/* site navigation end */
+
+/* hero start */
+
 .hero__wrapper{
 	padding: 160px 50px 0;
 	display: flex;
@@ -104,74 +112,78 @@ body{
 	padding: 15px 40px;
 	text-decoration: none;
 	text-align: center;
-	color: #d4af37;
-	font-size: 20px;
-	border-radius: 35px;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 40px;
 	border: 1px solid #d4af37;
+	background-image: linear-gradient(270deg,#d4af37,#b18145 106.25%);
 	z-index: 1000;
 }
 .hero__link:hover{
 	font-weight: 700;
-	color: #fff;
-	background-image: linear-gradient(270deg,#d4af37,#b18145 106.25%);
+	background-image: linear-gradient(270deg,#b18145, #d4af37 106.25%);
 }
+
+/* hero end */
+
+/* information about using this site section start */
+
 .using-info{
-	padding: 20px 0 90px;
-	border-bottom: 2px solid #f0f0f0;
+	background: linear-gradient(270deg,#111618,#201f1f 106.25%);
+	padding: 60px 0 60px;
+	z-index: 999;
 }
 .using-info__header{
-	position: relative;
 	width: 600px;
 	margin: 0 auto;
 	padding: 35px 0 70px;
-	color: #1C1D21;
+	color: rgb(255, 255, 255, 0.6);
 	text-align: center;
-	letter-spacing: .5px;
+	letter-spacing: 0.5px;
+	line-height: 50px;
 	font-size: 36px;
-}
-.using-info__header:after{
-	position: absolute;
-	display: block;
-	width: 100px;
-	height: 5px;
-	top: 150px;
-	left: 250px;
-	border-radius: 5px;
-	background-color: #6195FF;
-	content: "";
+	font-weight: 00;
 }
 .using-info__list{
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 	list-style-type: none;
 }
 .using-info__item{
-	width: 350px;
-	padding: 30px;
-	border: 2px solid #eee;
-	border-radius: 8px;
-}
-.using-info__item:hover{
-	background-color: #1C1D21;
+	width: 600px;
+	padding: 30px 80px;
 }
 .using-info__title{
 	margin: 0;
 	padding: 20px 20px 10px;
 	letter-spacing: .5px;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
-	color: #6195FF;
+	color: #d4af37;
+	text-align: center;
 }
 .using-info__text{
-	margin: 0;
-	padding: 10px 20px;
+	margin: 0 auto 10px;
+	padding: 10px 20px 20px;
 	line-height: 23px;
 	letter-spacing: .5px;
+	text-align: center;
 	color: #868F9B;
+	font-size: 20;
 }
+ #dots{
+	color: #fff;
+	background-color: #fff;
+}
+
+/* using info end */
+
+/* using tachnology section start */
+
 .using-technology{
 	padding-bottom: 40px;
 	background-color: #fafafa;
@@ -208,3 +220,5 @@ body{
 .using-technology__link:hover{
 	background-color: #0b0c0e;
 }
+
+/* using technology section end */
