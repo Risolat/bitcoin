@@ -228,13 +228,14 @@ body{
 
 .tarifs{
 	padding: 50px 0;
-	background-color: #f2f2f2;
+	background-color: #e7e7e7;
 }
 .tarifs__list{
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
 	list-style-type: none;
 }
 .tarifs__item{
@@ -244,10 +245,14 @@ body{
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-	padding: 50px 0;
-	margin: 10px 0;
-	border-radius: 30px;
+	padding: 60px 0;
+	margin: 10px 10px 20px;
+	border-radius: 20px;
 	background-color: #fff;
+	box-shadow:
+  0 13.1px 13.6px -75px rgba(0, 0, 0, 0.11),
+  0 94px 109px -75px rgba(0, 0, 0, 0.22)
+;
 }
 .tarifs__title{
 	margin: 0 0 10px;
@@ -256,7 +261,7 @@ body{
 	color: #222;
 }
 .tarifs__line{
-	width: 100px;
+	width: 150px;
 	height: 2px;
 	margin: 20px 0;
 	background-color: #d4af37;
@@ -278,6 +283,8 @@ body{
 	font-weight: bold;
 }
 .tarifs__link{
+	display: inline-block;
+	margin: 10px 0 0;
 	padding: 10px 35px;
 	font-size: 18px;
 	font-weight: bold;
@@ -286,4 +293,117 @@ body{
 	border-radius: 20px;
 	background-image: linear-gradient(250deg,#d4af37,#b18145 106.25%);
 }
+.tarifs__link:hover{
+	background-image: linear-gradient(270deg,#b18145, #d4af37 106.25%);
+}
 /* tarifs end */
+
+/* starter section start */
+
+.starter{
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background:
+		linear-gradient(to right, rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), 
+		url("../assets/img/bg2.jpg") no-repeat center center / cover;
+		background-attachment: fixed;
+}
+.starter__text{
+	margin: 0 0 10px;
+	font-size: 30px;
+	color: #fff;
+}
+.starter__link-box{
+	margin-top: 10px;
+}
+.starter__link{
+	display: inline-block;
+	width: 150px;
+	padding: 10px;
+	margin: 0 5px;
+	border-radius: 20px;
+	color: #fff;
+	background-image: linear-gradient(250deg,#d4af37,#b18145 106.25%);
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+}
+.starter__link:hover{
+	background-image: linear-gradient(270deg,#b18145, #d4af37 106.25%);
+}
+/* starter section end */
+
+/* services start */
+
+.services{
+	background: linear-gradient(270deg,#111618,#201f1f 106.25%);
+}
+.services__gold{
+	display: flex;
+}
+.services__text-wrapper{
+	align-self: center;
+	width: 650px;
+	flex-grow: 1;
+	text-align: center;
+	color: #fff;
+}
+.services__title{
+	margin: 0;
+	color: #d4af37;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0.5px;
+}
+.services__advantages{
+	margin: 0;
+	padding: 10px 0;
+	letter-spacing: 0.5px;
+	font-size: 24px;
+	color: #d4af37;
+}
+.services__gold-text{
+	width: 450px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-size: 20px;
+}
+.services__link{
+	display: inline-block;
+	padding: 15px 30px;
+	border-radius: 25px;
+	color: #fff;
+	background-image: linear-gradient(250deg,#d4af37,#b18145 106.25%);
+	text-decoration: none;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
+.services__gold-link:hover{
+	background-image: linear-gradient(270deg,#b18145, #d4af37 106.25%);
+}
+.services__gold-img{
+	flex-grow: 1;
+}
+.services__diomond{
+	display: flex;
+	background-color: #fff;
+}
+.services__diomond-img{
+	flex-grow: 1;
+}
+.services__diomond-text{
+	width: 450px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-size: 20px;
+	color: #222;
+}
+
+/* services */
