@@ -380,21 +380,17 @@ body{
 	color: #fff;
 	background-image: linear-gradient(250deg,#d4af37,#b18145 106.25%);
 	text-decoration: none;
-	font-size: 18px;
 	letter-spacing: 0.5px;
 }
-.services__gold-link:hover{
+.services__link:hover{
 	background-image: linear-gradient(270deg,#b18145, #d4af37 106.25%);
 }
-.services__gold-img{
+.services__img{
 	flex-grow: 1;
 }
 .services__diomond{
 	display: flex;
 	background-color: #fff;
-}
-.services__diomond-img{
-	flex-grow: 1;
 }
 .services__diomond-text{
 	width: 450px;
@@ -402,8 +398,86 @@ body{
 	padding-bottom: 20px;
 	line-height: 20px;
 	letter-spacing: .5px;
-	font-size: 20px;
+	font-size: 18px;
 	color: #222;
+}
+.services__real-estate{
+	display: flex;
+}
+.services__real-estate-text{
+	width: 450px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	line-height: 20px;
+	letter-spacing: .5px;
+	font-size: 20px;
+	color: #fff;
 }
 
 /* services */
+
+/* followings start */
+
+.followings{
+	padding: 10px 0 20px;
+	background:
+		linear-gradient(to right,  rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), 
+		url("../assets/img/background2.jpg") no-repeat center center / cover;
+		background-attachment: fixed;
+}
+.followings__text{
+	margin: 0;
+	padding: 60px 0 20px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+.followings__list{
+	margin: 0;
+	padding: 0 0 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.followings__item{
+	margin: 15px;
+}
+
+/* followings end */
+
+/* footer start */
+
+.footer{
+	padding: 10px 0 20px;
+	background: linear-gradient(270deg,#111618,#201f1f 106.25%);
+}
+.footer__wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+.footer__list{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+.footer__item{
+	margin: 0 10px;
+}
+.footer__link{
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: .5px;
+}
+.footer__text{
+	margin: 0;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #d4af37;
+}
+
+/* footer end */
