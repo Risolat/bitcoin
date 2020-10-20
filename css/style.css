@@ -21,7 +21,7 @@ body{
 	min-height: 100vh;
 	background:
 		linear-gradient(to right, rgba(31, 31, 31, 0.9), rgba(31, 31, 31, 0.9)), 
-		url("https://wallpaperset.com/w/full/1/0/e/492349.jpg") no-repeat center center / cover;
+		url("../assets/img/hero.jpg") no-repeat center center / cover;
 		background-attachment: fixed;
 }
 
@@ -31,6 +31,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 15px 0;
 }
 .site-nav__logo{
 	font-weight: 700;
@@ -40,15 +41,11 @@ body{
 }
 .site-nav__list{
 	margin: 0;
-	padding: 5px 0;
 	width: 700px;
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
 	z-index: 2000;
-}
-.site-nav__item{
-	padding: 10px 0;
 }
 .site-nav__link{
 	display: block;
@@ -60,10 +57,12 @@ body{
 }
 .site-nav__link:hover{
 	color: #d4af37;
-	border-bottom: 2px solid #d4af37;
+	box-shadow: 0 2px 0px #d4af37;
+;
+
 }
 .site-nav__link--active{
-	border-bottom: 2px solid #d4af37;
+	box-shadow: 0 2px 0px #d4af37;
 }
 
 .site-nav__link--signup{
@@ -75,7 +74,9 @@ body{
 	color: #fff;
 	background: linear-gradient(270deg,#d4af37,#b18145 106.25%);
 }
-
+.site-nav__menu{
+	display: none;
+}
 /* site navigation end */
 
 /* hero start */
@@ -100,7 +101,7 @@ body{
 .hero__text{
 	margin: 0;
 	padding: 0 0 25px;
-	width: 600px;
+	max-width: 600px;
 	line-height: 30px;
 	letter-spacing: 1.2px;
 	color: #fff;
@@ -343,6 +344,7 @@ body{
 }
 .services__gold{
 	display: flex;
+	flex-wrap: wrap;
 }
 .services__text-wrapper{
 	align-self: center;
@@ -481,3 +483,47 @@ body{
 }
 
 /* footer end */
+
+
+@media screen and (max-width: 920px){
+	.site-nav{
+		position: relative;
+		flex-direction: column;
+		align-items: flex-start;
+		
+	}
+	.site-nav__list{
+		display: none;
+		width: auto;
+		flex-direction: column;
+		align-self: center;
+		justify-content: center;
+	}
+	.site-nav__item{
+		padding: 5px 0;
+	}
+	.site-nav__link{
+		text-align: center;
+	}
+	.nav-expanded{
+		display: block;
+	}
+	.site-nav__menu{
+		position: absolute;
+		right: 30px;
+		display: block;
+		background-color: transparent;
+		border-width: 0;
+		z-index: 99;
+	}
+	.hero__wrapper{
+		padding-top: 100px;
+	}
+	.hero__link{
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	
+}
