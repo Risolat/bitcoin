@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5d0d55aa82.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <section class="login">
+      <nav class="site-nav">
+        <a class="site-nav__logo" href="#">
+          <img
+            class="site-nav__img"
+            src="./assets/img/logo.png"
+            alt="logo"
+            width="200"
+          />
+        </a>
+        <button class="site-nav__menu">
+          <img
+            class="site-nav__menu-icon"
+            src="./assets/img/menu.svg"
+            alt="menu"
+            width="30"
+            height="30"
+          />
+        </button>
+        <ul class="site-nav__list">
+          <li class="site-nav__item site-nav__item--active">
+            <a href="#" class="site-nav__link site-nav__link--active">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Gold</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Diomonds</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Real Estate</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">About us</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Blog</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Login</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link site-nav__link--signup"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="login__container">
+        <p class="login__text">Log In</p>
+        <form action="#" class="login__form" method="POST">
+          <div class="login__wrapper">
+            <label class="login__label" for="email-input"> Email * </label>
+            <input
+              type="email"
+              class="login__inputs"
+              name="email"
+              id="email-input"
+              required
+            />
+          </div>
+          <div class="login__wrapper">
+            <label class="login__label" for="password-input">
+              Password *
+            </label>
+            <input
+              type="password"
+              class="login__inputs login__password"
+              name="password"
+              id="password-input"
+              required
+            />
+            <i class="far fa-eye login__password-icon" id="togglePassword"></i>
+            <!-- <i class="fas fa-eye-slash"></i> -->
+            <!-- <i class="fas fa-eye"></i> -->
+          </div>
+          <button class="login__btn">Log In</button>
+        </form>
+        <a href="#" class="login__forget-password">Forgot your password?</a>
+        <p class="login__account-text">Do not have account?</p>
+        <button class="login__signUp-btn">Sign Up</button>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

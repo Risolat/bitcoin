@@ -350,7 +350,6 @@ body{
 }
 .services__gold{
 	display: flex;
-	padding: 40px 0;
 	background:
 		linear-gradient(to right, rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), 
 		url("../assets/img/gold.jpg") no-repeat center center / cover;
@@ -359,6 +358,7 @@ body{
 .services__text-wrapper{
 	align-self: center;
 	max-width: 650px;
+	padding: 40px 20px;
 	margin: 0 auto;
 	flex-grow: 1;
 	text-align: center;
@@ -403,7 +403,6 @@ body{
 }
 .services__diomond{
 	display: flex;
-	padding: 40px 0;
 	background:
 		linear-gradient(to right, rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), 
 		url("../assets/img/diamond.jpg") no-repeat center center / cover;
@@ -411,7 +410,6 @@ body{
 }
 .services__real-estate{
 	display: flex;
-	padding: 40px 0;
 	background:
 		linear-gradient(to right, rgba(31, 31, 31, 0.8), rgba(31, 31, 31, 0.8)), 
 		url("../assets/img/florida.jpg") no-repeat center center / cover;
