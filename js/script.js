@@ -12,6 +12,7 @@ $("form :input").focus(function() {
   $("label").removeClass("labelfocus");
 });
 
+
 var togglePassword = document.querySelector('#togglePassword');
 var password = document.querySelector('#password-input');
 
